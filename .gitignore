@@ -1,0 +1,10 @@
+
+/composer.lock
+
+/config/autoload/*.local.php
+/config/development.config.php
+
+/vendor
+/var/cache/*
+
+/.idea

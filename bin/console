@@ -1,0 +1,27 @@
+#!/usr/bin/env php
+<?php
+
+use Antidot\Application\Cli\Console;
+use Symfony\Component\Console\CommandLoader\FactoryCommandLoader;
+use Symfony\Component\Console\Input\ArgvInput;
+set_time_limit(0);
+require __DIR__ . '/../vendor/autoload.php';
+call_user_func(function () {
+    $container = require __DIR__ . '/../config/cli-container.php';
+    $config = $container->get('config');
+    $input = new ArgvInput();
+    /** @var Console $console */
+    $console = new Console();
+    $commands = $container->get('config')['console']['commands'] ?? [];
+    $lazyCommands = [];
+    foreach ($commands as $name => $command) {
+        $lazyCommands[$name] = static function () use ($command, $container) {
+            return $container->get($command);
+        };
+    }
+    $console->setCommandLoader(new FactoryCommandLoader($lazyCommands));
+    array_walk($config['console']['helper-sets'], static function ($helperSet) use ($console, $container) {
+        $console->setHelperSet($container->get($helperSet));
+    });
+    $console->run($input);
+});

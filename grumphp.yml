@@ -1,0 +1,8 @@
+parameters:
+    git_dir: .
+    bin_dir: vendor/bin
+    tasks:
+        composer_script:
+            script: check
+            triggered_by: [php, phtml]
+            working_directory: ~
