@@ -1,7 +1,7 @@
 {
   "name": "kpicaza/antidot-framework",
   "type": "project",
-  "license": "MIT",
+  "license": "BSD-2.0",
   "authors": [
     {
       "name": "kpicaza",
@@ -12,16 +12,35 @@
     {
       "type": "path",
       "url": "modules/framework"
+    },
+    {
+      "type": "path",
+      "url": "modules/logger"
+    },
+    {
+      "type": "path",
+      "url": "modules/symfony-config-translator"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/kpicaza/psr11-monolog.git"
     }
   ],
   "require": {
     "php": "^7.2.13",
-    "antidot/framework": "@dev"
+    "ext-json": "*",
+    "antidot/framework": "@dev",
+    "antidot/logger": "@dev",
+    "antidot/symfony-config-translator": "@dev",
+    "wshafer/psr11-monolog": "@dev",
+    "zendframework/zend-config": "^3.2",
+    "zendframework/zend-expressive-helpers": "^5.3"
   },
   "require-dev": {
     "phpro/grumphp": "^0.15.0",
     "phpstan/phpstan": "^0.11.5",
     "phpunit/phpunit": "^8.0",
+    "roave/security-advisories": "dev-master",
     "squizlabs/php_codesniffer": "^3.4",
     "symfony/var-dumper": "^4.2"
   },
@@ -47,5 +66,13 @@
   },
   "config": {
     "sort-packages": true
+  },
+  "extra": {
+    "zf": {
+      "component-whitelist": [
+        "antidot/framework",
+        "antidot/logger"
+      ]
+    }
   }
 }

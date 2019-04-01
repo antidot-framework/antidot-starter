@@ -1,7 +1,7 @@
 <?php
 
 use Aura\Di\ContainerBuilder;
-use Antidot\Container\ContainerConfig;
+use Antidot\Container\Config\ContainerConfig;
 
 // Load configuration
 $config = require __DIR__ . '/../config/cli-config.php';

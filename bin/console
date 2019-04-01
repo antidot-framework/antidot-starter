@@ -1,13 +1,19 @@
 #!/usr/bin/env php
 <?php
 
+declare(strict_types=1);
+
 use Antidot\Application\Cli\Console;
+use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\CommandLoader\FactoryCommandLoader;
 use Symfony\Component\Console\Input\ArgvInput;
-set_time_limit(0);
-require __DIR__ . '/../vendor/autoload.php';
-call_user_func(function () {
-    $container = require __DIR__ . '/../config/cli-container.php';
+
+\set_time_limit(0);
+
+require __DIR__.'/../vendor/autoload.php';
+
+\call_user_func(static function (): void {
+    $container = require __DIR__.'/../config/cli-container.php';
     $config = $container->get('config');
     $input = new ArgvInput();
     /** @var Console $console */
@@ -15,13 +21,16 @@ call_user_func(function () {
     $commands = $container->get('config')['console']['commands'] ?? [];
     $lazyCommands = [];
     foreach ($commands as $name => $command) {
-        $lazyCommands[$name] = static function () use ($command, $container) {
+        $lazyCommands[$name] = static function () use ($command, $container): Command {
             return $container->get($command);
         };
     }
     $console->setCommandLoader(new FactoryCommandLoader($lazyCommands));
-    array_walk($config['console']['helper-sets'], static function ($helperSet) use ($console, $container) {
-        $console->setHelperSet($container->get($helperSet));
-    });
+    \array_walk(
+        $config['console']['helper-sets'],
+        static function (string $helperSet) use ($console, $container): void {
+            $console->setHelperSet($container->get($helperSet));
+        }
+    );
     $console->run($input);
 });
