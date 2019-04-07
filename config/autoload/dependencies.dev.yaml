@@ -1,0 +1,7 @@
+parameters:
+  config_cache_enabled: false
+  monolog:
+    handlers:
+      default:
+        options:
+          level: 0

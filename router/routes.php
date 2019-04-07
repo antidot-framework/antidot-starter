@@ -3,9 +3,8 @@
 declare(strict_types=1);
 
 use Antidot\Application\Http\Application;
+use App\Application\Http\Handler\HomePage;
 use Psr\Container\ContainerInterface;
-use Psr\Http\Message\ServerRequestInterface;
-use Psr\Http\Message\ResponseInterface;
 
 /**
  * Setup routes with a single request method:
@@ -21,7 +20,5 @@ use Psr\Http\Message\ResponseInterface;
  * $app->route('/contact', App\Handler\ContactHandler::class, ['GET', 'POST', ...], 'contact');
  */
 return static function (Application $app, ContainerInterface $container) : void {
-    $app->get('/', [static function(ServerRequestInterface $request): ResponseInterface {
-        return new \Zend\Diactoros\Response\HtmlResponse('<html><body><h1>Hola mundo</h1></body></html>');
-    }], 'home');
+    $app->get('/', [HomePage::class], 'home');
 };
