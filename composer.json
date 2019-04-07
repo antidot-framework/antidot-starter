@@ -15,6 +15,10 @@
     },
     {
       "type": "path",
+      "url": "modules/event-dispatcher"
+    },
+    {
+      "type": "path",
       "url": "modules/logger"
     },
     {
@@ -29,12 +33,12 @@
   "require": {
     "php": "^7.2.13",
     "ext-json": "*",
-    "antidot/framework": "@dev",
-    "antidot/logger": "@dev",
-    "antidot/symfony-config-translator": "@dev",
+    "antidot-fw/event-dispatcher": "@dev",
+    "antidot-fw/framework": "@dev",
+    "antidot-fw/logger": "@dev",
+    "antidot-fw/symfony-config-translator": "@dev",
     "wshafer/psr11-monolog": "@dev",
-    "zendframework/zend-config": "^3.2",
-    "zendframework/zend-expressive-helpers": "^5.3"
+    "zendframework/zend-config": "^3.2"
   },
   "require-dev": {
     "phpro/grumphp": "^0.15.0",

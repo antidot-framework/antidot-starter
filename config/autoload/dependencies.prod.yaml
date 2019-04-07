@@ -1,2 +1,19 @@
 services:
+  App\Application\EventListener\SomeEventListener:
+  App\Application\Http\Handler\HomePage:
+  Psr\Log\LoggerInterface:
+    factory: [Antidot\Logger\Container\MonologFactory]
+
 parameters:
+  config_cache_enabled: true
+  app-events:
+    event-listeners:
+      some.event:
+        - 'App\Application\EventListener\SomeEventListener'
+  monolog:
+    handlers:
+      default:
+        type: 'stream'
+        options:
+          stream: 'var/log/%date%-default.log'
+          level: 400

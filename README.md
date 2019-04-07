@@ -5,6 +5,7 @@ This framework is based on concepts and components of other open source software
 
 ## Key Features
 
+* Request Response Lifecycle: [Psr-7](https://www.php-fig.org/psr/psr-7) Request and responses using Zend Diactoros
 * Request pipeline: [Psr-15](https://www.php-fig.org/psr/psr-15) Request handler and Middleware
 * Auto-wired Dependency injection: [Psr-11](https://www.php-fig.org/psr/psr-11) Container implemented by [Aura/Di](https://github.com/auraphp/Aura.Di)
 * Pipeline based router: Intuitive to use route system on top of [Aura/Router](https://github.com/auraphp/Aura.Router)

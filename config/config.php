@@ -14,9 +14,7 @@ $cacheConfig = [
 ];
 
 $aggregator = new ConfigAggregator([
-    \Zend\Expressive\Router\AuraRouter\ConfigProvider::class,
-    \Zend\Expressive\Helper\ConfigProvider::class,
-    \Zend\Expressive\Router\ConfigProvider::class,
+    \Antidot\Event\Container\Config\ConfigProvider::class,
     \WShafer\PSR11MonoLog\ConfigProvider::class,
     \Antidot\Logger\Container\Config\ConfigProvider::class,
     \Antidot\Container\Config\ConfigProvider::class,
@@ -29,7 +27,5 @@ $aggregator = new ConfigAggregator([
     //   - `*.local.php`
     new PhpFileProvider(realpath(__DIR__) . '/autoload/{{,*.}prod,{,*.}local,{,*.}dev}.php'),
     new ZendConfigProvider(realpath(__DIR__) . '/autoload/{{,*.}prod,{,*.}local,{,*.}dev}.yaml'),
-    // Load development config if it exists
-    new PhpFileProvider(realpath(__DIR__) . '/development.config.php'),
 ], $cacheConfig['config_cache_path']);
 return (new ConfigTranslator())($aggregator->getMergedConfig());
