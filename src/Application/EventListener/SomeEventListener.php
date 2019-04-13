@@ -10,6 +10,6 @@ class SomeEventListener
 {
     public function __invoke(SomeEvent $event): void
     {
-//        dump('Yes!!!', $event);
+        dump('Yes!!!', $event);
     }
 }

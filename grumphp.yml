@@ -3,6 +3,6 @@ parameters:
     bin_dir: vendor/bin
     tasks:
         composer_script:
-            script: check
+            script: check-all
             triggered_by: [php, phtml]
             working_directory: ~

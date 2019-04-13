@@ -14,10 +14,7 @@ $cacheConfig = [
 ];
 
 $aggregator = new ConfigAggregator([
-    \Antidot\Event\Container\Config\ConfigProvider::class,
     \WShafer\PSR11MonoLog\ConfigProvider::class,
-    \Antidot\Logger\Container\Config\ConfigProvider::class,
-    \Antidot\Container\Config\ConfigProvider::class,
     \Zend\HttpHandlerRunner\ConfigProvider::class,
     // Load application config in a pre-defined order in such a way that local settings
     // overwrite global settings. (Loaded as first to last):
@@ -25,7 +22,7 @@ $aggregator = new ConfigAggregator([
     //   - `*.global.php`
     //   - `local.php`
     //   - `*.local.php`
-    new PhpFileProvider(realpath(__DIR__) . '/autoload/{{,*.}prod,{,*.}local,{,*.}dev}.php'),
-    new ZendConfigProvider(realpath(__DIR__) . '/autoload/{{,*.}prod,{,*.}local,{,*.}dev}.yaml'),
+    new PhpFileProvider(realpath(__DIR__).'/services/{{,*.}prod,{,*.}local,{,*.}dev}.php'),
+    new ZendConfigProvider(realpath(__DIR__).'/services/{{,*.}prod,{,*.}local,{,*.}dev}.yaml'),
 ], $cacheConfig['config_cache_path']);
 return (new ConfigTranslator())($aggregator->getMergedConfig());

@@ -1,30 +1,13 @@
 {
-  "name": "kpicaza/antidot-framework",
+  "name": "antidot-fw/antidot-framework-starter",
   "type": "project",
-  "license": "BSD-2.0",
+  "license": "BSD-2-Clause",
   "authors": [
     {
-      "name": "kpicaza",
-      "email": "kpicaza.sound@gmail.com"
+      "name": "kpicaza"
     }
   ],
   "repositories": [
-    {
-      "type": "path",
-      "url": "modules/framework"
-    },
-    {
-      "type": "path",
-      "url": "modules/event-dispatcher"
-    },
-    {
-      "type": "path",
-      "url": "modules/logger"
-    },
-    {
-      "type": "path",
-      "url": "modules/symfony-config-translator"
-    },
     {
       "type": "vcs",
       "url": "https://github.com/kpicaza/psr11-monolog.git"
@@ -33,14 +16,17 @@
   "require": {
     "php": "^7.2.13",
     "ext-json": "*",
-    "antidot-fw/event-dispatcher": "@dev",
-    "antidot-fw/framework": "@dev",
-    "antidot-fw/logger": "@dev",
-    "antidot-fw/symfony-config-translator": "@dev",
+    "antidot-fw/aura-router-adapter": "dev-master",
+    "antidot-fw/cli": "dev-master",
+    "antidot-fw/event-dispatcher": "^1.1.0",
+    "antidot-fw/framework": "dev-master",
+    "antidot-fw/logger": "dev-master",
+    "antidot-fw/symfony-config-translator": "dev-master",
     "wshafer/psr11-monolog": "@dev",
     "zendframework/zend-config": "^3.2"
   },
   "require-dev": {
+    "franzl/whoops-middleware": "^1.1",
     "phpro/grumphp": "^0.15.0",
     "phpstan/phpstan": "^0.11.5",
     "phpunit/phpunit": "^8.0",
@@ -59,8 +45,9 @@
     }
   },
   "scripts": {
-    "check": [
+    "check-all": [
       "@cs-check",
+      "@test",
       "@inspect"
     ],
     "cs-check": "phpcs src --colors",
@@ -74,8 +61,12 @@
   "extra": {
     "zf": {
       "component-whitelist": [
-        "antidot/framework",
-        "antidot/logger"
+        "antidot-fw/framework",
+        "antidot-fw/logger",
+        "antidot-fw/aura-router-adapter",
+        "antidot-fw/cli",
+        "antidot-fw/event-dispatcher",
+        "antidot-fw/symfony-config-translator"
       ]
     }
   }

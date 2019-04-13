@@ -14,6 +14,8 @@ require 'vendor/autoload.php';
  * Self-called anonymous function that creates its own scope and keep the global namespace clean.
  */
 \call_user_func(static function (): void {
+    error_reporting(E_ALL & ~E_USER_DEPRECATED & ~E_DEPRECATED & ~E_STRICT & ~E_NOTICE);
+
     /** @var \Psr\Container\ContainerInterface $container */
     $container = require 'config/container.php';
     /** @var Application $app */
