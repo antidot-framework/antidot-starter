@@ -3,7 +3,7 @@
 
 declare(strict_types=1);
 
-use Antidot\Application\Cli\Console;
+use Antidot\Cli\Application\Console;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\CommandLoader\FactoryCommandLoader;
 use Symfony\Component\Console\Input\ArgvInput;

@@ -1,4 +1,5 @@
 parameters:
+  debug: true
   config_cache_enabled: false
   monolog:
     handlers:

@@ -5,10 +5,11 @@ services:
     factory: [Antidot\Logger\Container\MonologFactory]
 
 parameters:
+  debug: false
   config_cache_enabled: true
   app-events:
     event-listeners:
-      some.event:
+      App\Application\Event\SomeEvent:
         - 'App\Application\EventListener\SomeEventListener'
   monolog:
     handlers:
