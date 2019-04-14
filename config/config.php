@@ -14,8 +14,13 @@ $cacheConfig = [
 ];
 
 $aggregator = new ConfigAggregator([
+    \Antidot\Logger\Container\Config\ConfigProvider::class,
+    \Antidot\Event\Container\Config\ConfigProvider::class,
+    \Antidot\Cli\Container\Config\ConfigProvider::class,
+    \Antidot\Aura\Router\Container\Config\ConfigProvider::class,
     \WShafer\PSR11MonoLog\ConfigProvider::class,
     \Zend\HttpHandlerRunner\ConfigProvider::class,
+    \Antidot\Container\Config\ConfigProvider::class,
     // Load application config in a pre-defined order in such a way that local settings
     // overwrite global settings. (Loaded as first to last):
     //   - `global.php`

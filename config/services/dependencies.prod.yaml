@@ -10,7 +10,7 @@ parameters:
   app-events:
     event-listeners:
       App\Application\Event\SomeEvent:
-        - 'App\Application\EventListener\SomeEventListener'
+        - App\Application\EventListener\SomeEventListener
   monolog:
     handlers:
       default:

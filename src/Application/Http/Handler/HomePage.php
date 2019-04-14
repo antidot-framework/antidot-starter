@@ -11,6 +11,7 @@ use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
 use Zend\Diactoros\Response\HtmlResponse;
+use Zend\Diactoros\Response\JsonResponse;
 
 class HomePage implements RequestHandlerInterface
 {
@@ -26,6 +27,9 @@ class HomePage implements RequestHandlerInterface
     {
         $this->eventDispatcher->dispatch(SomeEvent::occur());
 
-        return new HtmlResponse('<html><body><h1>Hola mundo</h1></body></html>');
+        return new JsonResponse([
+            'docs' => 'https://antidotfw.io',
+            'Message' => 'Welcome to Antidot Framework Starter'
+        ]);
     }
 }
