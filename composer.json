@@ -22,6 +22,7 @@
     "antidot-fw/framework": "dev-master",
     "antidot-fw/logger": "dev-master",
     "antidot-fw/symfony-config-translator": "dev-master",
+    "symfony/yaml": "^4.2.7",
     "wshafer/psr11-monolog": "@dev",
     "zendframework/zend-config": "^3.2"
   },
