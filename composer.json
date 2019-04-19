@@ -64,6 +64,7 @@
       "component-whitelist": [
         "antidot-fw/framework",
         "antidot-fw/logger",
+        "antidot-fw/doctrine",
         "antidot-fw/aura-router-adapter",
         "antidot-fw/cli",
         "antidot-fw/event-dispatcher",
