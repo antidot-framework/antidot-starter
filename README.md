@@ -3,13 +3,25 @@ Antidot Framework
 
 This framework is based on concepts and components of other open source software, especially [Zend Expressive](https://docs.zendframework.com/zend-expressive/) and [Zend Stratigillity](https://docs.zendframework.com/zend-stratigility/).
 
-## Key Features
+## Installation
 
-* Request Response Lifecycle: [Psr-7](https://www.php-fig.org/psr/psr-7) Request and responses using Zend Diactoros
-* Request pipeline: [Psr-15](https://www.php-fig.org/psr/psr-15) Request handler and Middleware
-* Auto-wired Dependency injection: [Psr-11](https://www.php-fig.org/psr/psr-11) Container implemented by [Aura/Di](https://github.com/auraphp/Aura.Di)
-* Pipeline based router: Intuitive to use route system on top of [Aura/Router](https://github.com/auraphp/Aura.Router)
-* Cli: Ready to use Console Line Tool
+Install a project using [composer](https://getcomposer.org/download/) package manager:
+
+````bash
+composer create-project antidot-fw/antidot-framework-starter:dev-master dev
+mv dev/.* dev/* ./ && rmdir dev
+php -S 127.0.0.1:8000 -t public
+````
+
+![Default homepage](https://getting-started.antidotfw.io/images/default-homepage.jpg)
+
+Open another console and check the built-in Cli tool
+
+````bash
+bin/console
+````
+
+![Default console tool](https://getting-started.antidotfw.io/images/default-console.jpg)
 
 #### Disclaimer: 
 

@@ -65,10 +65,14 @@
         "antidot-fw/framework",
         "antidot-fw/logger",
         "antidot-fw/doctrine",
+        "antidot-fw/session",
         "antidot-fw/aura-router-adapter",
         "antidot-fw/cli",
+        "antidot-fw/phug-te,plate-renderer",
         "antidot-fw/event-dispatcher",
-        "antidot-fw/symfony-config-translator"
+        "antidot-fw/symfony-config-translator",
+        "wshafer/psr11-monolog",
+        "zendframework/zend-httphandlerrunner"
       ]
     }
   }
