@@ -1,7 +1,7 @@
 <?php
 
 use Aura\Di\ContainerBuilder;
-use Antidot\Container\Config\ContainerConfig;
+use Antidot\Aura\Container\Config\ContainerConfig;
 
 // Load configuration
 $config = require __DIR__ . '/../config/config.php';

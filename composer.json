@@ -17,6 +17,7 @@
     "php": "^7.2.13",
     "ext-json": "*",
     "ext-yaml": "*",
+    "antidot-fw/aura-container-config": "dev-master",
     "antidot-fw/aura-router-adapter": "dev-master",
     "antidot-fw/cli": "dev-master",
     "antidot-fw/event-dispatcher": "^1.1.0",
