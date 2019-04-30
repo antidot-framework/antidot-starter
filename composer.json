@@ -22,7 +22,7 @@
     "antidot-fw/cli": "dev-master",
     "antidot-fw/event-dispatcher": "^1.1.0",
     "antidot-fw/framework": "dev-master",
-    "antidot-fw/logger": "^1.0.0",
+    "antidot-fw/logger": "^1.0.1",
     "antidot-fw/symfony-config-translator": "dev-master",
     "symfony/yaml": "^4.2.7",
     "wshafer/psr11-monolog": "@dev",

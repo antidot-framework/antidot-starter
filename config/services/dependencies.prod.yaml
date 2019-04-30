@@ -1,8 +1,6 @@
 services:
   App\Application\EventListener\SomeEventListener:
   App\Application\Http\Handler\HomePage:
-  Psr\Log\LoggerInterface:
-    factory: [Antidot\Logger\Container\MonologFactory]
 
 parameters:
   debug: false
