@@ -20,6 +20,7 @@
     "antidot-fw/aura-container-config": "dev-master",
     "antidot-fw/aura-router-adapter": "dev-master",
     "antidot-fw/cli": "dev-master",
+    "antidot-fw/dev-tools": "dev-master",
     "antidot-fw/event-dispatcher": "^1.1.0",
     "antidot-fw/framework": "dev-master",
     "antidot-fw/logger": "^1.0.1",
@@ -66,6 +67,7 @@
       "component-whitelist": [
         "antidot-fw/framework",
         "antidot-fw/logger",
+        "antidot-fw/dev-tools",
         "antidot-fw/doctrine",
         "antidot-fw/session",
         "antidot-fw/aura-router-adapter",
