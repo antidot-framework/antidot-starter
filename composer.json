@@ -27,6 +27,7 @@
     "antidot-fw/symfony-config-translator": "dev-master",
     "symfony/yaml": "^4.2.7",
     "wshafer/psr11-monolog": "@dev",
+    "zendframework/zend-component-installer": "^2.1",
     "zendframework/zend-config": "^3.2"
   },
   "require-dev": {
