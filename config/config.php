@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Antidot\SymfonyConfigTranslator\Container\Config\ConfigAggregator;
+use Antidot\Yaml\YamlConfigProvider;
 use Zend\ConfigAggregator\ArrayProvider;
 use Zend\ConfigAggregator\PhpFileProvider;
 use Zend\ConfigAggregator\ZendConfigProvider;
@@ -25,7 +26,7 @@ $aggregator = new ConfigAggregator([
     //   - `*.local.yaml`
     //   - `*.dev.yaml`
     new PhpFileProvider(realpath(__DIR__).'/services/{{,*.}prod,{,*.}local,{,*.}dev}.php'),
-    new ZendConfigProvider(realpath(__DIR__).'/services/{{,*.}prod,{,*.}local,{,*.}dev}.yaml'),
+    new YamlConfigProvider(realpath(__DIR__).'/services/{{,*.}prod,{,*.}local,{,*.}dev}.yaml'),
     new ArrayProvider($cacheConfig),
 ], $cacheConfig['config_cache_path']);
 

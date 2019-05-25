@@ -16,7 +16,6 @@
   "require": {
     "php": "^7.2.13",
     "ext-json": "*",
-    "ext-yaml": "*",
     "antidot-fw/aura-container-config": "dev-master",
     "antidot-fw/aura-router-adapter": "dev-master",
     "antidot-fw/cli": "dev-master",
@@ -24,10 +23,10 @@
     "antidot-fw/event-dispatcher": "^1.1.0",
     "antidot-fw/framework": "dev-master",
     "antidot-fw/logger": "^1.0.1",
-    "antidot-fw/symfony-config-translator": "dev-master",
+    "antidot-fw/symfony-config-translator": "^1.0.0",
+    "antidot-fw/yaml-config-provider": "dev-master",
     "symfony/yaml": "^4.2.7",
-    "wshafer/psr11-monolog": "@dev",
-    "zendframework/zend-config": "^3.2"
+    "wshafer/psr11-monolog": "@dev"
   },
   "require-dev": {
     "franzl/whoops-middleware": "^1.1",
