@@ -1,14 +1,17 @@
 services:
-  App\Application\EventListener\SomeEventListener:
   App\Application\Http\Handler\HomePage:
+  App\Application\EventListener\SomeEventListener:
+    tags:
+      - { name: 'event_listener', event: 'App\Application\Event\SomeEvent' }
+
+  some.command:
+    class: App\Application\Command\SomeCommandExample
+    tags:
+      - { name: 'console.command', command: 'my:custom:command' }
 
 parameters:
   debug: false
   config_cache_enabled: true
-  app-events:
-    event-listeners:
-      App\Application\Event\SomeEvent:
-        - App\Application\EventListener\SomeEventListener
   monolog:
     handlers:
       default:
