@@ -6,7 +6,6 @@ use Antidot\SymfonyConfigTranslator\Container\Config\ConfigAggregator;
 use Antidot\Yaml\YamlConfigProvider;
 use Zend\ConfigAggregator\ArrayProvider;
 use Zend\ConfigAggregator\PhpFileProvider;
-use Zend\ConfigAggregator\ZendConfigProvider;
 
 // To enable or disable caching, set the `ConfigAggregator::ENABLE_CACHE` boolean in
 // `config/autoload/local.php`.

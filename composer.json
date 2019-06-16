@@ -18,7 +18,7 @@
     "ext-json": "*",
     "antidot-fw/aura-container-config": "dev-master",
     "antidot-fw/aura-router-adapter": "dev-master",
-    "antidot-fw/cli": "dev-master",
+    "antidot-fw/cli": "^1.0.0",
     "antidot-fw/dev-tools": "dev-master",
     "antidot-fw/event-dispatcher": "^1.1.0",
     "antidot-fw/framework": "dev-master",
