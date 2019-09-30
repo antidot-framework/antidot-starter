@@ -1,12 +1,8 @@
 <?php
 
-use Aura\Di\ContainerBuilder;
-use Antidot\Container\Config\ContainerConfig;
-
 // Load configuration
+use Antidot\Container\ContainerBuilder;
+
 $config = require __DIR__ . '/../config/cli-config.php';
 
-$builder = new ContainerBuilder();
-return $builder->newConfiguredInstance([
-    new ContainerConfig($config),
-], $builder::AUTO_RESOLVE);
+return ContainerBuilder::build($config, true);

@@ -1,9 +1,15 @@
 services:
   App\Application\Http\Handler\HomePage:
+#  App\Application\Http\Handler\SomeTestClass:
+#    arguments:
+#      $dispatcher: '@another.dispatcher'
   App\Application\EventListener\SomeEventListener:
     tags:
       - { name: 'event_listener', event: 'App\Application\Event\SomeEvent' }
 
+#  another.dispatcher:
+#    factory: Antidot\Event\Container\EventDispatcherFactory
+#
   some.command:
     class: App\Application\Command\SomeCommandExample
     tags:

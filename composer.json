@@ -16,9 +16,9 @@
   "require": {
     "php": "^7.2.13",
     "ext-json": "*",
-    "antidot-fw/aura-container-config": "dev-master",
     "antidot-fw/aura-router-adapter": "dev-master",
     "antidot-fw/cli": "^1.0.0",
+    "antidot-fw/container": "0.0.2",
     "antidot-fw/dev-tools": "dev-master",
     "antidot-fw/event-dispatcher": "^1.1.0",
     "antidot-fw/framework": "dev-master",
@@ -72,6 +72,7 @@
         "antidot-fw/session",
         "antidot-fw/aura-router-adapter",
         "antidot-fw/cli",
+        "antidot-fw/fast-router-adapter",
         "antidot-fw/phug-te,plate-renderer",
         "antidot-fw/event-dispatcher",
         "antidot-fw/symfony-config-translator",
