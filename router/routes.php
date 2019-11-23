@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use Antidot\Application\Http\Application;
 use App\Application\Http\Handler\HomePage;
+use App\Application\Http\Handler\SomeMiddleware;
 use Psr\Container\ContainerInterface;
 
 /**
@@ -20,5 +21,5 @@ use Psr\Container\ContainerInterface;
  * $app->route('/contact', App\Handler\ContactHandler::class, ['GET', 'POST', ...], 'contact');
  */
 return static function (Application $app, ContainerInterface $container) : void {
-    $app->get('/', [HomePage::class], 'home');
+    $app->get('/', [SomeMiddleware::class, HomePage::class], 'home');
 };
