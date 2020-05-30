@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use Zend\ConfigAggregator\ArrayProvider;
-use Zend\ConfigAggregator\ConfigAggregator;
+use Laminas\ConfigAggregator\ArrayProvider;
+use Laminas\ConfigAggregator\ConfigAggregator;
 
 $config = require __DIR__ . '/config.php';
 $cliConfig['dependencies'] = $config['console']['dependencies'];

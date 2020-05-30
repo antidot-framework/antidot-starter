@@ -21,7 +21,7 @@
     "antidot-fw/dev-tools": "dev-master",
     "antidot-fw/event-dispatcher": "^1.1.0",
     "antidot-fw/fast-router-adapter": "dev-master",
-    "antidot-fw/framework": "^0.0.1",
+    "antidot-fw/framework": "dev-master",
     "antidot-fw/logger": "^1.0.1",
     "antidot-fw/symfony-config-translator": "^1.0.0",
     "antidot-fw/yaml-config-provider": "dev-master",
@@ -37,7 +37,7 @@
     "roave/security-advisories": "dev-master",
     "squizlabs/php_codesniffer": "^3.4",
     "symfony/var-dumper": "^4.2",
-    "zendframework/zend-component-installer": "^2.1"
+    "laminas/laminas-component-installer": "^2.1"
   },
   "autoload": {
     "psr-4": {
@@ -64,7 +64,7 @@
     "sort-packages": true
   },
   "extra": {
-    "zf": {
+    "laminas": {
       "component-whitelist": [
         "antidot-fw/framework",
         "antidot-fw/logger",
@@ -78,7 +78,7 @@
         "antidot-fw/event-dispatcher",
         "antidot-fw/symfony-config-translator",
         "wshafer/psr11-monolog",
-        "zendframework/zend-httphandlerrunner"
+        "laminas/laminas-httphandlerrunner"
       ]
     }
   }
