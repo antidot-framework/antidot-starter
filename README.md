@@ -8,8 +8,8 @@ This framework is based on concepts and components of other open source software
 Install a project using [composer](https://getcomposer.org/download/) package manager:
 
 ````bash
-composer create-project antidot-fw/antidot-framework-starter:dev-master dev
-mv dev/.* dev/* ./ && rmdir dev
+composer create-project antidot-fw/antidot-framework-starter project-name
+mv project-name/.* project-name/* ./ && rmdir project-name
 php -S 127.0.0.1:8000 -t public
 ````
 
