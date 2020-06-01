@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use Antidot\DevTools\Container\Config\ConfigProvider as DevToolsConfigProvider;
 use Antidot\SymfonyConfigTranslator\Container\Config\ConfigAggregator;
 use Antidot\Yaml\YamlConfigProvider;
 use Laminas\ConfigAggregator\ArrayProvider;
@@ -14,6 +15,7 @@ $cacheConfig = [
 ];
 
 $aggregator = new ConfigAggregator([
+    class_exists(DevToolsConfigProvider::class) ? DevToolsConfigProvider::class : fn() => [],
     // Load application config in a pre-defined order in such a way that local settings
     // overwrite global settings. (Loaded as first to last):
     //   - `*.php`

@@ -7,37 +7,30 @@
       "name": "kpicaza"
     }
   ],
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/kpicaza/psr11-monolog.git"
-    }
-  ],
   "require": {
-    "php": "^7.2.13",
+    "php": "^7.4",
     "ext-json": "*",
-    "antidot-fw/cli": "^1.0.0",
-    "antidot-fw/container": "^0.0.2",
-    "antidot-fw/dev-tools": "^0.0.2",
-    "antidot-fw/event-dispatcher": "^1.1.0",
-    "antidot-fw/fast-router-adapter": "^0.0.1",
-    "antidot-fw/framework": "^0.0.3",
-    "antidot-fw/logger": "^1.0.1",
-    "antidot-fw/symfony-config-translator": "^1.0.0",
-    "antidot-fw/yaml-config-provider": "^0.0.1",
-    "symfony/yaml": "^4.2.7",
-    "wshafer/psr11-monolog": "@dev"
+    "antidot-fw/cli": "^1.1.0",
+    "antidot-fw/container": "^0.1.0",
+    "antidot-fw/event-dispatcher": "^2.0.0",
+    "antidot-fw/fast-router-adapter": "^0.1.0",
+    "antidot-fw/framework": "^0.1.0",
+    "antidot-fw/logger": "^1.1.0",
+    "antidot-fw/symfony-config-translator": "^1.1.0",
+    "antidot-fw/yaml-config-provider": "^0.1.0",
+    "wshafer/psr11-monolog": "^3.0.0"
   },
   "require-dev": {
+    "antidot-fw/dev-tools": "^0.1.1",
     "filp/whoops": "^2.5",
     "franzl/whoops-middleware": "^1.1",
-    "phpro/grumphp": "^0.15.0",
+    "laminas/laminas-component-installer": "^2.1",
+    "phpro/grumphp": "^0.17.0",
     "phpstan/phpstan": "^0.11.5",
     "phpunit/phpunit": "^8.0",
     "roave/security-advisories": "dev-master",
     "squizlabs/php_codesniffer": "^3.4",
-    "symfony/var-dumper": "^4.2",
-    "laminas/laminas-component-installer": "^2.1"
+    "symfony/var-dumper": "^4.2"
   },
   "autoload": {
     "psr-4": {
@@ -68,7 +61,6 @@
       "component-whitelist": [
         "antidot-fw/framework",
         "antidot-fw/logger",
-        "antidot-fw/dev-tools",
         "antidot-fw/doctrine",
         "antidot-fw/session",
         "antidot-fw/aura-router-adapter",

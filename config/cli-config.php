@@ -3,10 +3,11 @@
 declare(strict_types=1);
 
 use Laminas\ConfigAggregator\ArrayProvider;
-use Laminas\ConfigAggregator\ConfigAggregator;
+use Antidot\SymfonyConfigTranslator\Container\Config\ConfigAggregator;
 
 $config = require __DIR__ . '/config.php';
-$cliConfig['dependencies'] = $config['console']['dependencies'];
+$cliConfig['services'] = $config['console']['services'] ?? [];
+$cliConfig['factories'] = $config['console']['factories'] ?? [];
 $cacheConfig = [
     'cli_config_cache_path' => 'var/cache/cli-config-cache.php',
 ];
