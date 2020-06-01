@@ -1,9 +1,9 @@
 <?php
 
 // Load configuration
-use Antidot\Container\ContainerBuilder;
+use Antidot\Container\Builder;
 
 $config = require __DIR__ . '/../config/config.php';
 
 // Build container
-return ContainerBuilder::build($config, true);
+return Builder::build($config, true);
