@@ -15,6 +15,13 @@ $cacheConfig = [
 ];
 
 $aggregator = new ConfigAggregator([
+    \WShafer\PSR11MonoLog\ConfigProvider::class,
+    \Antidot\Logger\Container\Config\ConfigProvider::class,
+    \Antidot\Container\Config\ConfigProvider::class,
+    \Laminas\HttpHandlerRunner\ConfigProvider::class,
+    \Antidot\Fast\Router\Container\Config\ConfigProvider::class,
+    \Antidot\Event\Container\Config\ConfigProvider::class,
+    \Antidot\Cli\Container\Config\ConfigProvider::class,
     class_exists(DevToolsConfigProvider::class) ? DevToolsConfigProvider::class : fn() => [],
     // Load application config in a pre-defined order in such a way that local settings
     // overwrite global settings. (Loaded as first to last):
