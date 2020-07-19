@@ -10,12 +10,13 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 class SomeCommandExample extends Command
 {
-    protected function configure()
+    protected function configure(): void
     {
         $this->setName('my:custom:command');
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
+        return 0;
     }
 }
