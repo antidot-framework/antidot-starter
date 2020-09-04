@@ -25,7 +25,7 @@
     "filp/whoops": "^2.5",
     "franzl/whoops-middleware": "^1.1",
     "laminas/laminas-component-installer": "^2.1",
-    "phpro/grumphp": "^0.21.0",
+    "phpro/grumphp": "^0.22.0",
     "phpstan/phpstan": "^0.12.32",
     "phpunit/phpunit": "^9.2",
     "roave/security-advisories": "dev-master",
