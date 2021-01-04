@@ -23,7 +23,7 @@
   "require-dev": {
     "antidot-fw/dev-tools": "^0.1.1",
     "filp/whoops": "^2.5",
-    "franzl/whoops-middleware": "^1.1",
+    "franzl/whoops-middleware": "^2.0",
     "laminas/laminas-component-installer": "^2.1",
     "phpro/grumphp": "~1.0",
     "phpstan/phpstan": "^0.12.32",
