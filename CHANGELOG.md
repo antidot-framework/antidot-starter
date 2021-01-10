@@ -1,8 +1,24 @@
 # Changelog
 
-## [1.0.1](https://github.com/antidot-framework/antidot-starter/tree/HEAD)
+## [1.0.2](https://github.com/antidot-framework/antidot-starter/tree/1.0.2) (2021-01-10)
 
-[Full Changelog](https://github.com/antidot-framework/antidot-starter/compare/1.0.0...HEAD)
+[Full Changelog](https://github.com/antidot-framework/antidot-starter/compare/1.0.1...1.0.2)
+
+**Implemented enhancements:**
+
+- Add php8 support [\#21](https://github.com/antidot-framework/antidot-starter/pull/21) ([kpicaza](https://github.com/kpicaza))
+
+**Merged pull requests:**
+
+- Update franzl/whoops-middleware requirement from ^1.1 to ^2.0 [\#20](https://github.com/antidot-framework/antidot-starter/pull/20) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Update phpro/grumphp requirement from ~0.21 to ~1.0 [\#19](https://github.com/antidot-framework/antidot-starter/pull/19) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Update phpro/grumphp requirement from ^0.21.0 to ~0.21 [\#18](https://github.com/antidot-framework/antidot-starter/pull/18) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Update phpro/grumphp requirement from ^0.20.0 to ^0.21.0 [\#17](https://github.com/antidot-framework/antidot-starter/pull/17) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Update phpro/grumphp requirement from ^0.19.1 to ^0.20.0 [\#16](https://github.com/antidot-framework/antidot-starter/pull/16) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [1.0.1](https://github.com/antidot-framework/antidot-starter/tree/1.0.1) (2020-07-19)
+
+[Full Changelog](https://github.com/antidot-framework/antidot-starter/compare/1.0.0...1.0.1)
 
 **Merged pull requests:**
 
