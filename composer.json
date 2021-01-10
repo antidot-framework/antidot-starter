@@ -7,8 +7,14 @@
       "name": "kpicaza"
     }
   ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/antidot-framework/psr11-monolog"
+    }
+  ],
   "require": {
-    "php": "^7.4",
+    "php": "^7.4|^8.0",
     "ext-json": "*",
     "antidot-fw/cli": "^1.1.0",
     "antidot-fw/container": "^0.1.0",
@@ -18,7 +24,7 @@
     "antidot-fw/logger": "^1.1.0",
     "antidot-fw/symfony-config-translator": "^1.1.0",
     "antidot-fw/yaml-config-provider": "^0.1.0",
-    "wshafer/psr11-monolog": "^3.0.0"
+    "wshafer/psr11-monolog": "^3.0.0|@dev"
   },
   "require-dev": {
     "antidot-fw/dev-tools": "^0.1.1",
@@ -61,7 +67,9 @@
       "component-whitelist": [
         "antidot-fw/framework",
         "antidot-fw/logger",
+        "antidot-fw/dbal-adapter",
         "antidot-fw/doctrine",
+        "antidot-fw/message-queue",
         "antidot-fw/session",
         "antidot-fw/aura-router-adapter",
         "antidot-fw/cli",
