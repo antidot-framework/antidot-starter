@@ -19,8 +19,8 @@
     "antidot-fw/cli": "^1.1.0",
     "antidot-fw/container": "^0.1.0",
     "antidot-fw/event-dispatcher": "^2.0.0",
-    "antidot-fw/fast-router-adapter": "^0.1.0",
-    "antidot-fw/framework": "^0.1.0",
+    "antidot-fw/fast-router-adapter": "^0.2.0",
+    "antidot-fw/framework": "^0.2.0",
     "antidot-fw/logger": "^1.1.0",
     "antidot-fw/symfony-config-translator": "^1.1.0",
     "antidot-fw/yaml-config-provider": "^0.1.0",
@@ -78,7 +78,8 @@
         "antidot-fw/event-dispatcher",
         "antidot-fw/symfony-config-translator",
         "wshafer/psr11-monolog",
-        "laminas/laminas-httphandlerrunner"
+        "laminas/laminas-httphandlerrunner",
+        "laminas/laminas-diactoros"
       ]
     }
   }
