@@ -1,8 +1,16 @@
 # Changelog
 
-## [Unreleased](https://github.com/antidot-framework/antidot-starter/tree/HEAD)
+## [1.1.0](https://github.com/antidot-framework/antidot-starter/tree/1.1.0)
 
-[Full Changelog](https://github.com/antidot-framework/antidot-starter/compare/1.0.2...HEAD)
+[Full Changelog](https://github.com/antidot-framework/antidot-starter/compare/1.0.3...1.1.0)
+
+**Merged pull requests:**
+
+- bump framework and router to 0.2.0 [\#24](https://github.com/antidot-framework/antidot-starter/pull/24) ([kpicaza](https://github.com/kpicaza))
+
+## [1.0.3](https://github.com/antidot-framework/antidot-starter/tree/1.0.3) (2021-01-19)
+
+[Full Changelog](https://github.com/antidot-framework/antidot-starter/compare/1.0.2...1.0.3)
 
 **Implemented enhancements:**
 
@@ -33,6 +41,7 @@
 - Update phpunit/phpunit requirement from ^8.0 to ^9.2 [\#15](https://github.com/antidot-framework/antidot-starter/pull/15) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Update phpstan/phpstan requirement from ^0.11.5 to ^0.12.32 [\#14](https://github.com/antidot-framework/antidot-starter/pull/14) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Update phpro/grumphp requirement from ^0.17.0 to ^0.19.1 [\#13](https://github.com/antidot-framework/antidot-starter/pull/13) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Update symfony/var-dumper requirement from ^4.2 to ^5.1 [\#12](https://github.com/antidot-framework/antidot-starter/pull/12) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [1.0.0](https://github.com/antidot-framework/antidot-starter/tree/1.0.0) (2020-06-01)
 
@@ -64,7 +73,6 @@
 
 **Merged pull requests:**
 
-- Update symfony/var-dumper requirement from ^4.2 to ^5.1 [\#12](https://github.com/antidot-framework/antidot-starter/pull/12) ([dependabot[bot]](https://github.com/apps/dependabot))
 - issue/\#8: remove pecl yaml extension dependency [\#10](https://github.com/antidot-framework/antidot-starter/pull/10) ([kpicaza](https://github.com/kpicaza))
 - issue/\#3: add ext-yaml as dependency [\#4](https://github.com/antidot-framework/antidot-starter/pull/4) ([kpicaza](https://github.com/kpicaza))
 - Issue/\#1 [\#2](https://github.com/antidot-framework/antidot-starter/pull/2) ([kpicaza](https://github.com/kpicaza))
