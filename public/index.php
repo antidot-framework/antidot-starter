@@ -13,7 +13,7 @@ require 'vendor/autoload.php';
 /**
  * Self-called anonymous function that creates its own scope and keep the global namespace clean.
  */
-\call_user_func(static function (): void {
+(static function (): void {
     error_reporting(E_ALL & ~E_USER_DEPRECATED & ~E_DEPRECATED & ~E_STRICT & ~E_NOTICE);
 
     /** @var \Psr\Container\ContainerInterface $container */
@@ -25,4 +25,4 @@ require 'vendor/autoload.php';
     (require 'router/middleware.php')($app, $container);
     (require 'router/routes.php')($app, $container);
     $app->run();
-});
+})();

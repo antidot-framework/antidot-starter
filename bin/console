@@ -7,10 +7,10 @@ use Antidot\Cli\Application\Console;
 
 set_time_limit(0);
 
-call_user_func(static function (): void {
+(static function (): void {
     require __DIR__.'/../vendor/autoload.php';
     $container = require __DIR__.'/../config/cli-container.php';
     $console = $container->get(Console::class);
 
     $console->run();
-});
+})();
