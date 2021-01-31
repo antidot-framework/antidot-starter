@@ -1,6 +1,14 @@
 # Changelog
 
-## [1.1.0](https://github.com/antidot-framework/antidot-starter/tree/1.1.0)
+## [1.1.1](https://github.com/antidot-framework/antidot-starter/tree/1.1.1)
+
+[Full Changelog](https://github.com/antidot-framework/antidot-starter/compare/1.1.0...1.1.1)
+
+**Implemented enhancements:**
+
+- Tiny refactoring proposal [\#25](https://github.com/antidot-framework/antidot-starter/pull/25) ([kbondurant](https://github.com/kbondurant))
+
+## [1.1.0](https://github.com/antidot-framework/antidot-starter/tree/1.1.0) (2021-01-26)
 
 [Full Changelog](https://github.com/antidot-framework/antidot-starter/compare/1.0.3...1.1.0)
 
