@@ -22,6 +22,7 @@
     "antidot-fw/fast-router-adapter": "^0.2.0",
     "antidot-fw/framework": "^0.2.0",
     "antidot-fw/logger": "^1.1.0",
+    "antidot-fw/no-floc-middleware": "^1.0",
     "antidot-fw/symfony-config-translator": "^1.1.0",
     "antidot-fw/yaml-config-provider": "^0.1.0",
     "wshafer/psr11-monolog": "^3.0.0|@dev"
