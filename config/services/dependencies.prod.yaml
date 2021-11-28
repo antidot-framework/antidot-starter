@@ -13,6 +13,10 @@ services:
 parameters:
   debug: false
   config_cache_enabled: true
+  server:
+    workers: 1
+    host: 127.0.0.1
+    port: 3000
   monolog:
     handlers:
       default:
