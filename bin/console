@@ -4,13 +4,25 @@
 declare(strict_types=1);
 
 use Antidot\Cli\Application\Console;
+use Antidot\Framework\Runtime\AntidotRuntime;
+
+ini_set('memory_limit', '2048M');
+
+$_SERVER['APP_RUNTIME'] = AntidotRuntime::class;
+$_SERVER['APP_RUNTIME_OPTIONS'] = [
+    'host' => '0.0.0.0',
+    'port' => 3000,
+    'debug' => true,
+];
+$rootDir = dirname(__DIR__);
+
+require_once $rootDir . '/vendor/autoload_runtime.php';
 
 set_time_limit(0);
 
-(static function (): void {
-    require __DIR__.'/../vendor/autoload.php';
-    $container = require __DIR__.'/../config/cli-container.php';
+return static function () use ($rootDir): void {
+    $container = require $rootDir . '/config/cli-container.php';
     $console = $container->get(Console::class);
 
     $console->run();
-})();
+};

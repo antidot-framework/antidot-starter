@@ -11,6 +11,10 @@
     {
       "type": "git",
       "url": "https://github.com/antidot-framework/psr11-monolog"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/kpicaza/antidot-framework"
     }
   ],
   "require": {
@@ -19,18 +23,17 @@
     "antidot-fw/cli": "^1.1.0",
     "antidot-fw/container": "^0.1.0",
     "antidot-fw/event-dispatcher": "^2.0.0",
-    "antidot-fw/fast-router-adapter": "^0.2.0",
-    "antidot-fw/framework": "^0.2.0",
+    "antidot-fw/framework": "2.x.x-dev",
     "antidot-fw/logger": "^1.1.0",
     "antidot-fw/symfony-config-translator": "^1.1.0",
     "antidot-fw/yaml-config-provider": "^0.1.0",
+    "react/async": "@dev",
     "wshafer/psr11-monolog": "^3.0.0|@dev"
   },
   "require-dev": {
     "antidot-fw/dev-tools": "^0.1.1",
     "filp/whoops": "^2.5",
     "franzl/whoops-middleware": "^2.0",
-    "laminas/laminas-component-installer": "^2.1",
     "phpro/grumphp": "~1.0",
     "phpstan/phpstan": "^0.12.32",
     "phpunit/phpunit": "^9.2",
@@ -71,15 +74,11 @@
         "antidot-fw/doctrine",
         "antidot-fw/message-queue",
         "antidot-fw/session",
-        "antidot-fw/aura-router-adapter",
         "antidot-fw/cli",
-        "antidot-fw/fast-router-adapter",
-        "antidot-fw/phug-te,plate-renderer",
+        "antidot-fw/phug-template-renderer",
         "antidot-fw/event-dispatcher",
         "antidot-fw/symfony-config-translator",
-        "wshafer/psr11-monolog",
-        "laminas/laminas-httphandlerrunner",
-        "laminas/laminas-diactoros"
+        "wshafer/psr11-monolog"
       ]
     }
   }
