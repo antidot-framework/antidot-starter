@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-use Antidot\Application\Http\Application;
-use Antidot\Application\Http\Middleware\ErrorMiddleware;
-use Antidot\Application\Http\Middleware\RouteDispatcherMiddleware;
-use Antidot\Application\Http\Middleware\RouteNotFoundMiddleware;
+use Antidot\Framework\Application;
+use Antidot\Framework\Middleware\ErrorMiddleware;
+use Antidot\Framework\Middleware\RouteDispatcherMiddleware;
+use Antidot\Framework\Middleware\RouteNotFoundMiddleware;
 use Antidot\Logger\Application\Http\Middleware\ExceptionLoggerMiddleware;
 use Antidot\Logger\Application\Http\Middleware\RequestLoggerMiddleware;
 

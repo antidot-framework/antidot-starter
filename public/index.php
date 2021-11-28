@@ -2,27 +2,35 @@
 
 declare(strict_types=1);
 
-// Delegate static file requests back to the PHP built-in webserver
-use Antidot\Application\Http\Application;
+use Antidot\Framework\Application;
+use Antidot\Framework\Middleware\MiddlewareFactory;
+use Antidot\Framework\Router\RouteFactory;
+use Antidot\Framework\Router\Router;
+use Antidot\Framework\Runtime\AntidotRuntime;
 
-if (PHP_SAPI === 'cli-server' && $_SERVER['SCRIPT_FILENAME'] !== __FILE__) {
-    return false;
-}
-chdir(dirname(__DIR__));
-require 'vendor/autoload.php';
-/**
- * Self-called anonymous function that creates its own scope and keep the global namespace clean.
- */
-(static function (): void {
-    error_reporting(E_ALL & ~E_USER_DEPRECATED & ~E_DEPRECATED & ~E_STRICT & ~E_NOTICE);
+ini_set('memory_limit', '2048M');
 
-    /** @var \Psr\Container\ContainerInterface $container */
-    $container = require 'config/container.php';
-    /** @var Application $app */
-    $app = $container->get(Application::class);
-    // Execute programmatic/declarative middleware pipeline and routing
-    // configuration statements
-    (require 'router/middleware.php')($app, $container);
-    (require 'router/routes.php')($app, $container);
-    $app->run();
-})();
+$_SERVER['APP_RUNTIME'] = AntidotRuntime::class;
+$_SERVER['APP_RUNTIME_OPTIONS'] = [
+    'host' => '0.0.0.0',
+    'port' => 3000,
+    'debug' => true,
+];
+$rootDir = dirname(__DIR__);
+
+require_once $rootDir . '/vendor/autoload_runtime.php';
+
+return static function () use ($rootDir) {
+    $container = require $rootDir . '/config/container.php';
+    $middlewareFactory = $container->get(MiddlewareFactory::class);
+    $application = new Application(
+        $middlewareFactory,
+        new RouteFactory(),
+        $container->get(Router::class)
+    );
+    (require $rootDir . '/router/middleware.php')($application);
+    (require $rootDir . '/router/routes.php')($application, $container);
+
+    return $application;
+};
+

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Antidot\Application\Http\Application;
+use Antidot\Framework\Application;
 use App\Application\Http\Handler\HomePage;
 use App\Application\Http\Handler\SomeMiddleware;
 use Psr\Container\ContainerInterface;
