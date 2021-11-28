@@ -25,6 +25,7 @@
     "antidot-fw/event-dispatcher": "^2.0.0",
     "antidot-fw/framework": "2.x.x-dev",
     "antidot-fw/logger": "^1.1.0",
+    "antidot-fw/runtime": "@dev",
     "antidot-fw/symfony-config-translator": "^1.1.0",
     "antidot-fw/yaml-config-provider": "^0.1.0",
     "react/async": "@dev",
