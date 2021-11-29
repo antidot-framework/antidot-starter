@@ -6,9 +6,3 @@ parameters:
       default:
         options:
           level: 0
-
-services:
-  Antidot\Application\Http\Response\ErrorResponseGenerator:
-    class: Antidot\Application\Http\Response\ServerRequestErrorResponseGenerator
-    arguments:
-      $devMode: 'true'

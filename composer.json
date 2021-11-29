@@ -18,17 +18,18 @@
     }
   ],
   "require": {
-    "php": "^7.4|^8.0",
+    "php": ">=8.1",
     "ext-json": "*",
     "antidot-fw/cli": "^1.1.0",
-    "antidot-fw/container": "^0.1.0",
+    "antidot-fw/container": "invokables-dev",
     "antidot-fw/event-dispatcher": "^2.0.0",
-    "antidot-fw/framework": "2.x.x-dev",
+    "antidot-fw/framework": "3.x.x-dev",
     "antidot-fw/logger": "^1.1.0",
-    "antidot-fw/runtime": "@dev",
+    "antidot-fw/runtime": "^0.1",
     "antidot-fw/symfony-config-translator": "^1.1.0",
     "antidot-fw/yaml-config-provider": "^0.1.0",
     "react/async": "@dev",
+    "symfony/runtime": "^5.3",
     "wshafer/psr11-monolog": "^3.0.0|@dev"
   },
   "require-dev": {
