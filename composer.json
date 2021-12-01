@@ -21,7 +21,7 @@
     "php": ">=8.1",
     "ext-json": "*",
     "antidot-fw/cli": "^1.1.0",
-    "antidot-fw/container": "invokables-dev",
+    "antidot-fw/container": "^0.1.5",
     "antidot-fw/event-dispatcher": "^2.0.0",
     "antidot-fw/framework": "3.x.x-dev",
     "antidot-fw/logger": "^1.1.0",
@@ -59,6 +59,7 @@
       "@test",
       "@inspect"
     ],
+    "dev-server": "php -S ${APP_HOST:-0.0.0.0:3000} -t public",
     "cs-check": "phpcs src --colors",
     "cs-fix": "phpcbf src --colors",
     "inspect": "phpstan analyse src -l7 --ansi",
