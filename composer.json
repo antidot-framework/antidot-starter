@@ -22,7 +22,7 @@
     "ext-json": "*",
     "antidot-fw/cli": "^1.1.0",
     "antidot-fw/container": "^0.1.5",
-    "antidot-fw/event-dispatcher": "^2.0.0",
+    "antidot-fw/event-dispatcher": "async-dispatcher-dev",
     "antidot-fw/framework": "3.x.x-dev",
     "antidot-fw/logger": "^1.1.0",
     "antidot-fw/runtime": "^0.1",

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use Antidot\Framework\Application;
 use Antidot\Runtime\AntidotRuntime;
+use Psr\Container\ContainerInterface;
 
 ini_set('memory_limit', '2048M');
 
@@ -12,7 +13,7 @@ $rootDir = dirname(__DIR__);
 
 require_once $rootDir . '/vendor/autoload_runtime.php';
 
-return static function () use ($rootDir) {
+return static function () use ($rootDir): ContainerInterface {
     $container = require $rootDir . '/config/container.php';
     $application = $container->get(Application::class);
 
