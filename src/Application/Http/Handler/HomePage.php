@@ -11,18 +11,12 @@ use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
 
-class HomePage implements RequestHandlerInterface
+final class HomePage implements RequestHandlerInterface
 {
-    /** @var EventDispatcherInterface */
-    private $eventDispatcher;
-    private ResponseFactoryInterface $responseFactory;
-
     public function __construct(
-        EventDispatcherInterface $eventDispatcher,
-        ResponseFactoryInterface $responseFactory
+        private EventDispatcherInterface $eventDispatcher,
+        private ResponseFactoryInterface $responseFactory
     ) {
-        $this->eventDispatcher = $eventDispatcher;
-        $this->responseFactory = $responseFactory;
     }
 
     public function handle(ServerRequestInterface $request): ResponseInterface

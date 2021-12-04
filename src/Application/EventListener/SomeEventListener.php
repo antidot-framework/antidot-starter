@@ -7,17 +7,13 @@ namespace App\Application\EventListener;
 use App\Application\Event\SomeEvent;
 use Psr\Log\LoggerInterface;
 
-use function get_class;
 use function sprintf;
 
-class SomeEventListener
+final class SomeEventListener
 {
-    /** @var LoggerInterface */
-    private $logger;
-
-    public function __construct(LoggerInterface $logger)
-    {
-        $this->logger = $logger;
+    public function __construct(
+        private LoggerInterface $logger
+    ) {
     }
 
     public function __invoke(SomeEvent $event): void
