@@ -9,6 +9,8 @@ use Psr\Container\ContainerInterface;
 ini_set('memory_limit', '2048M');
 
 $_SERVER['APP_RUNTIME'] = AntidotRuntime::class;
+
+chdir(dirname(__DIR__));
 $rootDir = dirname(__DIR__);
 
 require_once $rootDir . '/vendor/autoload_runtime.php';

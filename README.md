@@ -21,7 +21,7 @@ PHP full featured framework designed to allow you creating 100% framework agnost
 ```bash
 composer create-project antidot-fw/antidot-framework-starter project-name
 cd project-name
-bin/console serve # runs Async server
+XDEBUG_MODE=off bin/console serve # runs Async server with XDebug disabled for better performance
 php -S 127.0.0.1:8000 -t public # runs Sync server nice for testing
 ```
 

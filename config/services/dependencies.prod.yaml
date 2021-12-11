@@ -21,7 +21,6 @@ parameters:
   monolog:
     handlers:
       default:
-        type: 'stream'
+        type: 'echo'
         options:
-          stream: 'var/log/%date%-default.log'
           level: 400
