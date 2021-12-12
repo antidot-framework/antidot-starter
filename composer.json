@@ -11,10 +11,6 @@
     {
       "type": "git",
       "url": "https://github.com/antidot-framework/psr11-monolog"
-    },
-    {
-      "type": "git",
-      "url": "https://github.com/kpicaza/antidot-framework"
     }
   ],
   "require": {
@@ -23,9 +19,9 @@
     "antidot-fw/cli": "^1.1.0",
     "antidot-fw/container": "^0.1.5",
     "antidot-fw/event-dispatcher": "^2.1",
-    "antidot-fw/framework": "3.x.x-dev",
+    "antidot-fw/framework": "@dev",
     "antidot-fw/logger": "^1.1.0",
-    "antidot-fw/monolog-react-handler": "@dev",
+    "antidot-fw/monolog-react-handler": "^0.1",
     "antidot-fw/runtime": "^0.1",
     "antidot-fw/symfony-config-translator": "^1.1.0",
     "antidot-fw/yaml-config-provider": "^0.1.0",
@@ -37,6 +33,7 @@
     "antidot-fw/dev-tools": "^0.1.1",
     "filp/whoops": "^2.5",
     "franzl/whoops-middleware": "^2.0",
+    "laminas/laminas-component-installer": "^2.6",
     "phpro/grumphp": "~1.0",
     "phpstan/phpstan": "^1.2",
     "phpunit/phpunit": "^9.2",
@@ -51,7 +48,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "AppTest\\": "test"
+      "App\\Test\\": "test"
     }
   },
   "scripts": {
@@ -77,6 +74,7 @@
         "antidot-fw/dbal-adapter",
         "antidot-fw/doctrine",
         "antidot-fw/message-queue",
+        "antidot-fw/no-floc-middleware",
         "antidot-fw/session",
         "antidot-fw/cli",
         "antidot-fw/phug-template-renderer",

@@ -13,7 +13,7 @@ $_SERVER['APP_RUNTIME'] = AntidotRuntime::class;
 chdir(dirname(__DIR__));
 $rootDir = dirname(__DIR__);
 
-require_once $rootDir . '/vendor/autoload_runtime.php';
+require_once 'vendor/autoload_runtime.php';
 
 return static function () use ($rootDir): ContainerInterface {
     $container = require $rootDir . '/config/container.php';

@@ -15,10 +15,10 @@ $cacheConfig = [
 ];
 
 $aggregator = new ConfigAggregator([
+    \Antidot\Framework\Config\ConfigProvider::class,
     \Antidot\Runtime\Config\ConfigProvider::class,
     \WShafer\PSR11MonoLog\ConfigProvider::class,
     \Antidot\Logger\Container\Config\ConfigProvider::class,
-    \Antidot\Framework\Config\ConfigProvider::class,
     \Antidot\Event\Container\Config\ConfigProvider::class,
     \Antidot\Cli\Container\Config\ConfigProvider::class,
     class_exists(DevToolsConfigProvider::class) ? DevToolsConfigProvider::class : fn() => [],
