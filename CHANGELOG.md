@@ -1,6 +1,15 @@
 # Changelog
 
-## [1.1.1](https://github.com/antidot-framework/antidot-starter/tree/1.1.1)
+## [2.0.0BETA1](https://github.com/antidot-framework/antidot-starter/tree/2.0.0BETA1) (2021-12-12)
+
+[Full Changelog](https://github.com/antidot-framework/antidot-starter/compare/1.1.1...2.0.0BETA1)
+
+**Implemented enhancements:**
+
+- Update to use new antidot framework package [\#33](https://github.com/antidot-framework/antidot-starter/pull/33) ([kpicaza](https://github.com/kpicaza))
+- Remove cached file and add missed class on config [\#26](https://github.com/antidot-framework/antidot-starter/pull/26) ([peter279k](https://github.com/peter279k))
+
+## [1.1.1](https://github.com/antidot-framework/antidot-starter/tree/1.1.1) (2021-01-31)
 
 [Full Changelog](https://github.com/antidot-framework/antidot-starter/compare/1.1.0...1.1.1)
 
