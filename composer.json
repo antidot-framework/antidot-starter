@@ -33,7 +33,7 @@
     "antidot-fw/dev-tools": "^0.1.1",
     "filp/whoops": "^2.5",
     "franzl/whoops-middleware": "^2.0",
-    "laminas/laminas-component-installer": "^2.6",
+    "laminas/laminas-component-installer": "^3.0",
     "phpro/grumphp": "~1.0",
     "phpstan/phpstan": "^1.2",
     "phpunit/phpunit": "^9.2",
