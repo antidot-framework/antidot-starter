@@ -64,7 +64,12 @@
     "test": "phpunit --colors=always"
   },
   "config": {
-    "sort-packages": true
+    "sort-packages": true,
+    "allow-plugins": {
+      "laminas/laminas-component-installer": true,
+      "phpro/grumphp": true,
+      "symfony/runtime": true
+    }
   },
   "extra": {
     "laminas": {
