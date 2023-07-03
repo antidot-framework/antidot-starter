@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 use Laminas\ConfigAggregator\ArrayProvider;
-use Antidot\SymfonyConfigTranslator\Container\Config\ConfigAggregator;
+use Laminas\ConfigAggregator\ConfigAggregator;
 
 $config = require __DIR__ . '/config.php';
 $cliConfig['services'] = $config['console']['services'] ?? [];

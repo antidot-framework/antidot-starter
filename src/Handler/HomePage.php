@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace App\Application\Http\Handler;
+namespace App\Handler;
 
-use App\Application\Event\SomeEvent;
 use Psr\EventDispatcher\EventDispatcherInterface;
 use Psr\Http\Message\ResponseFactoryInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
+use App\Event\SomeEvent;
 
 final class HomePage implements RequestHandlerInterface
 {
