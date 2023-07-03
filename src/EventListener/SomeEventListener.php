@@ -2,11 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Application\EventListener;
+namespace App\EventListener;
 
-use App\Application\Event\SomeEvent;
 use Psr\Log\LoggerInterface;
-
+use App\Event\SomeEvent;
 use function sprintf;
 
 final class SomeEventListener

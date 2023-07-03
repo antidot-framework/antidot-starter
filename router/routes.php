@@ -3,8 +3,8 @@
 declare(strict_types=1);
 
 use Antidot\Framework\Application;
-use App\Application\Http\Handler\HomePage;
-use App\Application\Http\Handler\SomeMiddleware;
+use App\Handler\HomePage;
+use App\Handler\SomeMiddleware;
 use Psr\Container\ContainerInterface;
 
 /**
